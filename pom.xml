@@ -16,31 +16,43 @@
       	<sonar.organization>vvhitefox</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>com.googlecode.soundlibs</groupId>
-            <artifactId>basicplayer</artifactId>
-            <version>3.0.0.0</version>
-        </dependency>
-        <dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.0.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.0.0</version>
-			<scope>test</scope>
-			
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>1.8.1</version>
-			<scope>test</scope>
-		</dependency>
+	    <dependencies>
+	        <dependency>
+	            <groupId>com.googlecode.soundlibs</groupId>
+	            <artifactId>basicplayer</artifactId>
+	            <version>3.0.0.0</version>
+	        </dependency>
+	        <dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>5.0.0</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>5.0.0</version>
+				<scope>test</scope>
+				
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-runner</artifactId>
+				<version>1.8.1</version>
+				<scope>test</scope>
+			</dependency>
 
-    </dependencies>
+	    </dependencies>
+	   	  <build>
+		    <pluginManagement>
+		      <plugins>
+		        <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-surefire-plugin</artifactId>
+		          <version>3.0.0-M5</version>
+		        </plugin>
+		      </plugins>
+		    </pluginManagement>
+		  </build>
+
 </project>
