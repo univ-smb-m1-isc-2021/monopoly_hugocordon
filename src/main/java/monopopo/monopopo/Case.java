@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public abstract class Case {
 
 	
-	protected String nom;
+	public String nom;
 	
 	public Case(String nom ) {
 		this.nom = nom;
