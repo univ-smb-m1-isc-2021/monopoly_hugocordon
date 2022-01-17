@@ -2,11 +2,10 @@ name: Maven Build & Sonar analysis
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
   pull_request:
-    types: [opened, synchronize, reopened]
-
+    branches: [ main ]
+    
 jobs:
 
   build:
